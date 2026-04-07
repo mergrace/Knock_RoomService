@@ -8,6 +8,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
         SceneManager.LoadSceneAsync("Hallway");
     }
    
+      public void QuitGame()
+    {
+        Application.Quit();
+    }
         
     
 }
