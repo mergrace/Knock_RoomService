@@ -5,13 +5,13 @@ public class NewMonoBehaviourScript : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync("Hallway");
+        SceneManager.LoadScene("Hallway");
     }
-   
-      public void QuitGame()
+
+
+    public void QuitGame()
     {
+        Debug.Log("Game has been quit");
         Application.Quit();
     }
-        
-    
 }
