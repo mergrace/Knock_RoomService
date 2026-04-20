@@ -12,25 +12,25 @@ public class PlayerInventory : MonoBehaviour
         if (rottenFood > 0)
         {
             rottenFood--;
-            Debug.Log("Used Rotten Food. Left: " + rottenFood);
+            Debug.Log("Used up rotten food. left: " + rottenFood);
         }
     }
 
-    public void UsePlate()
+    public void UsePlates()
     {
         if (plates > 0)
         {
             plates--;
-            Debug.Log("Used Plate. Left: " + plates);
+            Debug.Log("Used up plates. left: " + plates);
         }
     }
 
-    public void UseKnife()
+    public void UseKnives()
     {
         if (knives > 0)
         {
             knives--;
-            Debug.Log("Used Knife. Left: " + knives);
+            Debug.Log("Used up knives. left: " + knives);
         }
     }
 }
