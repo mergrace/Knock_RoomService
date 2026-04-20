@@ -7,22 +7,21 @@ public class Floatupanddown : MonoBehaviour
     public float frequency = 1f;
 
     
-    Vector3 posOffset = new Vector3();
-    Vector3 tempPos = new Vector3();
+    Vector2 posOffset = new Vector2();
+    Vector2 tempPos = new Vector2();
 
     void Start()
     {
-        // Store the starting position 
-        posOffset = transform.position;
+        posOffset = transform.position; //starting position
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Float up/down with a Sin()
-        tempPos = posOffset;
-        tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
+        if (Time.timeScale == 0f) return; //Pause Menu
 
+        tempPos = posOffset;
+        tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude; //makes the object floagt up and down 
         transform.position = tempPos;
     }
 }
