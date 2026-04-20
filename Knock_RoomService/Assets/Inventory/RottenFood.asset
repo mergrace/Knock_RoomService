@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0418dd1e3053674aa154c33535a6b6c, type: 3}
+  m_Name: RottenFood
+  m_EditorClassIdentifier: Assembly-CSharp::ToolClass
+  itemName: RottenFood
+  itemIcon: {fileID: 6698179603740377058, guid: 629a6366c2d589249a9ee11d3900848e, type: 3}
+  toolType: 0
