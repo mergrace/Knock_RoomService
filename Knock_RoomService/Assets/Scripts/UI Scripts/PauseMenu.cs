@@ -19,6 +19,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
+        pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         SceneManager.LoadScene("Hallway");
     }

@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Time.timeScale == 0f) return;
+
         Vector3 position = Vector3.zero;
         if(Input.GetKey(KeyCode.D))
         {
