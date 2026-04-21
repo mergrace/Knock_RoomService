@@ -1,18 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GhostsAttack : MonoBehaviour
 {
-    public int health = 100;
+    public int maxhealth = 100;
 
     public GameObject deathEffect;
 
+    public FloatingHealthBar healthBar;
+
+    public int currentHealth;
+
+    void Start()
+    {
+        healthBar.SetMaxHealth(maxhealth);
+        currentHealth = maxhealth;
+}
+
     public void TakeDamage (int damage)
     {
-        health -= damage;
+        currentHealth -= damage;
+        healthBar.SetMaxHealth(currentHealth);
 
-        if(health <= 0)
+        if (currentHealth <= 0)
         {
             Die();
         }
@@ -27,7 +39,12 @@ public class GhostsAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if (Input.GetButtonDown("Fire1"))
+      
+    }
+
+    void OnCollisioneEnter2D(Collider2D Col)
+    {
+        if (Col.gameObject.CompareTag("Rotten"))
         {
             TakeDamage(15);
         }

@@ -7,7 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth;
 
     public HealthBar healthBar;
-    public GameObject GameOverPanel;
+    public GameObject gameoverpanel;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,6 +15,8 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+
+        gameoverpanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -23,9 +25,9 @@ public class PlayerHealth : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Ghosts"))
+        if (other.gameObject.CompareTag("Ghost"))
         {
             TakeDamage(10);
         }
@@ -35,7 +37,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
-        
+   
         if (currentHealth <=0)
         {
             Die();
@@ -44,10 +46,11 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
+        gameoverpanel.SetActive(true);
         Debug.Log("Player died");
+        //Time.timeScale = 1f;
 
-        GameOverPanel.SetActive(true);
-        Time.timeScale = 0f;
     }
-    
+
+
 }

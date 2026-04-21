@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3762886837156774303}
   m_Layer: 0
   m_Name: rf_bullet
-  m_TagString: Untagged
+  m_TagString: Rotten
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,4 +170,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   speed: 20
+  damage: 15
   rb: {fileID: 3402451745693221449}
