@@ -15,14 +15,15 @@ public class GhostsAttack : MonoBehaviour
 
     void Start()
     {
-        healthBar.SetMaxHealth(maxhealth);
         currentHealth = maxhealth;
+        healthBar.SetMaxHealth(maxhealth);
+        healthBar.SetHealth(currentHealth);
 }
 
     public void TakeDamage (int damage)
     {
         currentHealth -= damage;
-        healthBar.SetMaxHealth(currentHealth);
+        healthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
@@ -42,7 +43,7 @@ public class GhostsAttack : MonoBehaviour
       
     }
 
-    void OnCollisioneEnter2D(Collider2D Col)
+    void OnCollisionEnter2D(Collision2D Col)
     {
         if (Col.gameObject.CompareTag("Rotten"))
         {
