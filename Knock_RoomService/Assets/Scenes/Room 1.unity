@@ -2522,11 +2522,6 @@ Transform:
   - {fileID: 29817160}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1438045814 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
-  m_PrefabInstance: {fileID: 367237247233420323}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1535892040
 GameObject:
   m_ObjectHideFlags: 0
@@ -3706,67 +3701,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1001 &367237247233420323
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8007303130618764529, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.24927
-      objectReference: {fileID: 0}
-    - target: {fileID: 8007303130618764529, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.59019
-      objectReference: {fileID: 0}
-    - target: {fileID: 8007303130618764529, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8007303130618764529, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8007303130618764529, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8007303130618764529, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8007303130618764529, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8007303130618764529, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8007303130618764529, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8007303130618764529, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
-      propertyPath: m_Name
-      value: ImpactEffect
-      objectReference: {fileID: 0}
-    - target: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
 --- !u!224 &421783076164747559
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8098,7 +8032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostsAttack
   maxhealth: 100
-  deathEffect: {fileID: 0}
+  deathEffect: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
   healthBar: {fileID: 630556694}
   currentHealth: 0
 --- !u!1 &8328316639611984919
@@ -8292,7 +8226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostsAttack
   maxhealth: 100
-  deathEffect: {fileID: 0}
+  deathEffect: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
   healthBar: {fileID: 1569738034}
   currentHealth: 0
 --- !u!212 &8608170849436876725
@@ -8383,7 +8317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostsAttack
   maxhealth: 100
-  deathEffect: {fileID: 0}
+  deathEffect: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
   healthBar: {fileID: 2026820520}
   currentHealth: 0
 --- !u!1 &8709043536521347595
@@ -8568,7 +8502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostsAttack
   maxhealth: 100
-  deathEffect: {fileID: 0}
+  deathEffect: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
   healthBar: {fileID: 500353432}
   currentHealth: 0
 --- !u!114 &9134947290578058340
@@ -8598,7 +8532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostsAttack
   maxhealth: 100
-  deathEffect: {fileID: 1438045814}
+  deathEffect: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
   healthBar: {fileID: 1579681197}
   currentHealth: 0
 --- !u!1 &9141026662869232707
@@ -8645,5 +8579,4 @@ SceneRoots:
   - {fileID: 1290019428}
   - {fileID: 2955613002088204797}
   - {fileID: 651498588}
-  - {fileID: 367237247233420323}
   - {fileID: 1030439573}
