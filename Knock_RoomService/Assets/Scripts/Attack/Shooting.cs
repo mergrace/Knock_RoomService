@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
+
     public Transform firePoint;
     public GameObject rf_bulletPreFab;
 
@@ -15,9 +16,10 @@ public class Shooting : MonoBehaviour
             Shoot();
         }
     }
-    void Shoot ()
+    public void Shoot()
     {
         //all of the shooting logic is here
         Instantiate(rf_bulletPreFab, firePoint.position, firePoint.rotation);
     }
+
 }
