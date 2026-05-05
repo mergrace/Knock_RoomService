@@ -4,16 +4,12 @@ public class PlayerHealth : MonoBehaviour
 {
     AudioManager audioManager;
 
-    private void Awake()
-    {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-    }
-
     public int maxHealth = 100;
     public int currentHealth;
 
     public HealthBar healthBar;
     public GameObject gameoverpanel;
+    public GameObject deathEffect;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,6 +20,7 @@ public class PlayerHealth : MonoBehaviour
 
         gameoverpanel.SetActive(false);
 
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -55,7 +52,9 @@ public class PlayerHealth : MonoBehaviour
     {
         audioManager.PlaySFX(audioManager.playerdeath);
 
+        Instantiate(deathEffect, transform.position, Quaternion.identity);
         gameoverpanel.SetActive(true);
+        Destroy(gameObject);
         Debug.Log("Player died");
         //Time.timeScale = 1f;
 
