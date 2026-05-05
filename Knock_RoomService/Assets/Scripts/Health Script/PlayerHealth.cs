@@ -2,6 +2,12 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     public int maxHealth = 100;
     public int currentHealth;
@@ -17,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
 
         gameoverpanel.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -46,6 +53,8 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
+        audioManager.PlaySFX(audioManager.playerdeath);
+
         gameoverpanel.SetActive(true);
         Debug.Log("Player died");
         //Time.timeScale = 1f;

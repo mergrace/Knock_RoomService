@@ -2,6 +2,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     public KeyManager cm;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,6 +37,7 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(other.gameObject);
             cm.keyCount++;
+            audioManager.PlaySFX(audioManager.keycollect);
         }
     }
 }

@@ -5,6 +5,13 @@ using UnityEngine.UI;
 
 public class GhostsAttack : MonoBehaviour
 {
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     public int maxhealth = 100;
 
     public GameObject deathEffect;
@@ -18,9 +25,9 @@ public class GhostsAttack : MonoBehaviour
         currentHealth = maxhealth;
         healthBar.SetMaxHealth(maxhealth);
         healthBar.SetHealth(currentHealth);
-}
+    }
 
-    public void TakeDamage (int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
@@ -31,16 +38,18 @@ public class GhostsAttack : MonoBehaviour
         }
     }
 
-    void Die ()
+    void Die()
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
+        audioManager.PlaySFX(audioManager.ghostdeath);
         Destroy(gameObject);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-      
+
     }
 
     void OnCollisionEnter2D(Collision2D Col)
@@ -49,5 +58,12 @@ public class GhostsAttack : MonoBehaviour
         {
             TakeDamage(15);
         }
+        
+
     }
+
 }
+
+
+ 
+       
