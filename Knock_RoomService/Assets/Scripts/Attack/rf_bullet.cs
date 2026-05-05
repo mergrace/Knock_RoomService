@@ -23,6 +23,7 @@ public class rf_bullet : MonoBehaviour
         {
             Ghosts.TakeDamage(damage);
         }
+
         Destroy(gameObject);
     }
 }
