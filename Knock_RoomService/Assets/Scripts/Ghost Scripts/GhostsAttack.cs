@@ -52,16 +52,6 @@ public class GhostsAttack : MonoBehaviour
 
     }
 
-    void OnCollisionEnter2D(Collision2D Col)
-    {
-        if (Col.gameObject.CompareTag("Rotten"))
-        {
-            TakeDamage(15);
-        }
-        
-
-    }
-
 }
 
 

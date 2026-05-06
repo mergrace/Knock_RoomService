@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     public int damage = 1;
 
     private Rigidbody2D rb;
-    public GhostsAttack ghostAttack;
+    private GhostsAttack ghostAttack;
 
     void Start()
     {
