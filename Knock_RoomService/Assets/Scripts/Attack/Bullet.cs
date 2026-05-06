@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
     public int damage = 1;
 
     private Rigidbody2D rb;
+    public GhostsAttack ghostAttack;
 
     void Start()
     {
@@ -21,7 +22,7 @@ public class Bullet : MonoBehaviour
     {
         if (collision.CompareTag("Ghost"))
         {
-            EnemyHealth enemy = collision.GetComponent<EnemyHealth>();
+            GhostsAttack enemy = collision.GetComponent<GhostsAttack>();
 
             if (enemy != null)
             {
