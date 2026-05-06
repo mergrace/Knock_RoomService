@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private Animator animator;
+    bool isWalking = false;
     AudioManager audioManager;
 
     private void Awake()
@@ -12,7 +14,7 @@ public class PlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,10 +26,14 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(KeyCode.D))
         {
             position.x += 0.1f;
+            isWalking = true; 
+            transform.localScale = new Vector3(1, transform.localScale.y);
         }
         if (Input.GetKey(KeyCode.A))
         {
             position.x -= 0.1f;
+            isWalking = true;
+            transform.localScale = new Vector3(-1, transform.localScale.y);
         }
         transform.position += position; 
     }
@@ -39,5 +45,9 @@ public class PlayerController : MonoBehaviour
             cm.keyCount++;
             audioManager.PlaySFX(audioManager.keycollect);
         }
+
+        animator.SetBool("Walk", isWalking);
     }
+
+
 }
