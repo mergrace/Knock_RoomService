@@ -56,7 +56,7 @@ public class PlayerHealth : MonoBehaviour
         gameoverpanel.SetActive(true);
         Destroy(gameObject);
         Debug.Log("Player died");
-        //Time.timeScale = 1f;
+        Time.timeScale = 1f;
 
     }
 

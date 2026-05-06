@@ -5,11 +5,26 @@ using UnityEngine.UI;
 
 public class GhostsAttack : MonoBehaviour
 {
-    AudioManager audioManager;
+    public enum EnemyType { Ghost, Ghoul, Vampire }
+    public EnemyType enemyType;
+    [SerializeField]private AudioManager audioManager;
 
     private void Awake()
     {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        if (!audioManager)
+        {
+            if(GameObject.FindGameObjectWithTag("Audio")  != null)
+            {
+                audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+            }
+            else
+            {
+                Debug.Log("No Audio Object");
+            }
+
+           
+        }
+       
     }
 
     public int maxhealth = 100;
@@ -41,15 +56,20 @@ public class GhostsAttack : MonoBehaviour
     void Die()
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
-        audioManager.PlaySFX(audioManager.ghostdeath);
-        Destroy(gameObject);
+
+        if (audioManager)
+            audioManager.PlaySFX(audioManager.ghostdeath);
+            Destroy(gameObject);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            audioManager.PlaySFX(audioManager.ghostdeath);
+        }
     }
 
 }

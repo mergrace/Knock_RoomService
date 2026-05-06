@@ -6,9 +6,9 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        //audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
-    public KeyManager cm;
+    public KeyManager2 cm;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(other.gameObject);
             cm.keyCount++;
-            //audioManager.PlaySFX(audioManager.keycollect);
+            audioManager.PlaySFX(audioManager.keycollect);
         }
     }
 }
