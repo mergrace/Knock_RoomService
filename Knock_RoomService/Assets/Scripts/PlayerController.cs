@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
+
     public KeyManager cm;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
         }
         transform.position += position; 
     }
+
      void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Key"))

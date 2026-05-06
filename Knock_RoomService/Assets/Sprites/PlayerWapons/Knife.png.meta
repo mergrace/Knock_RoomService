@@ -103,10 +103,10 @@ TextureImporter:
       name: Knife_0
       rect:
         serializedVersion: 2
-        x: 157
-        y: 56
-        width: 94
-        height: 500
+        x: 106
+        y: 108
+        width: 103
+        height: 505
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
