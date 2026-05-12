@@ -58,8 +58,21 @@ public class GhostsAttack : MonoBehaviour
         Instantiate(deathEffect, transform.position, Quaternion.identity);
 
         if (audioManager)
-            audioManager.PlaySFX(audioManager.ghostdeath);
-            Destroy(gameObject);
+        {
+            if (enemyType == EnemyType.Ghost) 
+            {
+                audioManager.PlaySFX(audioManager.ghostdeath);
+                Destroy(gameObject);
+            }
+            else if(enemyType == EnemyType.Ghoul)
+            {
+                audioManager.PlaySFX(audioManager.ghouldeath );
+            }
+            
+        }
+
+
+            
 
     }
 
