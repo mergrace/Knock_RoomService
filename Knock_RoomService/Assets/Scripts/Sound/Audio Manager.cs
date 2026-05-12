@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
     [Header("---------- Audio Clip ----------")]
     public AudioClip ghostdeath;
     public AudioClip vampiredeath;
-    public AudioClip ghoulsdeath;
+    public AudioClip ghouldeath;
     public AudioClip keycollect;
     public AudioClip playerdeath;
 

@@ -67,6 +67,7 @@ public class GhostsAttack : MonoBehaviour
             else if(enemyType == EnemyType.Ghoul)
             {
                 audioManager.PlaySFX(audioManager.ghouldeath );
+                Destroy(gameObject);
             }
             
         }

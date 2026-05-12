@@ -3450,7 +3450,7 @@ MonoBehaviour:
   SFXSource: {fileID: 1081428548}
   ghostdeath: {fileID: 8300000, guid: 9ef2a95ae6040ab4b850f79f16ffcb62, type: 3}
   vampiredeath: {fileID: 8300000, guid: 7b362661b45bb91438fc3655ffc3096b, type: 3}
-  ghoulsdeath: {fileID: 8300000, guid: ef9bd2a703f5b4b429212989d2f8ca5f, type: 3}
+  ghouldeath: {fileID: 0}
   keycollect: {fileID: 8300000, guid: b1ba60a3d15da94478b76b67e6ad1971, type: 3}
   playerdeath: {fileID: 8300000, guid: 4772897fb09cb77478533ea453da017c, type: 3}
 --- !u!4 &1412661389
@@ -10305,7 +10305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostsAttack
   enemyType: 0
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 1412661388}
   maxhealth: 100
   deathEffect: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
   healthBar: {fileID: 630556694}
@@ -10519,7 +10519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostsAttack
   enemyType: 0
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 1412661388}
   maxhealth: 100
   deathEffect: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
   healthBar: {fileID: 1569738034}
@@ -10553,7 +10553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostsAttack
   enemyType: 0
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 1412661388}
   maxhealth: 100
   deathEffect: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
   healthBar: {fileID: 2026820520}
@@ -10785,7 +10785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostsAttack
   enemyType: 0
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 1412661388}
   maxhealth: 100
   deathEffect: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
   healthBar: {fileID: 500353432}
@@ -10825,7 +10825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostsAttack
   enemyType: 0
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 1412661388}
   maxhealth: 100
   deathEffect: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
   healthBar: {fileID: 4750478259392076222}
