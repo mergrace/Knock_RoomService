@@ -69,6 +69,11 @@ public class GhostsAttack : MonoBehaviour
                 audioManager.PlaySFX(audioManager.ghouldeath );
                 Destroy(gameObject);
             }
+            else if (enemyType == EnemyType.Vampire)
+            {
+                audioManager.PlaySFX(audioManager.vampiredeath);
+                Destroy(gameObject);
+            }
             
         }
 
