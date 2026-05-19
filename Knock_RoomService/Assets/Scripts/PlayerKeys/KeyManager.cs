@@ -16,6 +16,6 @@ public class KeyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        keyText.text = keyCount.ToString() + "/2";
+        keyText.text = keyCount.ToString() + "/3";
     }
 }
