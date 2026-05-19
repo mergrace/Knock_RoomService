@@ -6,11 +6,7 @@ public class PlayerController : MonoBehaviour
     bool isWalking = false;
     AudioManager audioManager;
 
-    private void Awake()
-    {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-    }
-    public KeyManager2 cm;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,6 +16,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetBool("Walk", isWalking);
+
         if (Time.timeScale == 0f) return;
 
         Vector3 position = Vector3.zero;
@@ -36,17 +34,6 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector3(-1, transform.localScale.y);
         }
         transform.position += position; 
-    }
-     void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Key"))
-        {
-            Destroy(other.gameObject);
-            cm.keyCount++;
-            audioManager.PlaySFX(audioManager.keycollect);
-        }
-
-        animator.SetBool("Walk", isWalking);
     }
 
 
