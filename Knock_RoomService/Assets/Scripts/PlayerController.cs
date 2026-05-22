@@ -4,6 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     private Animator animator;
     bool isWalking = false;
+
     AudioManager audioManager;
 
     

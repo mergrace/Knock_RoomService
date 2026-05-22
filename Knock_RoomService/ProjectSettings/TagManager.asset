@@ -8,6 +8,7 @@ TagManager:
   - Ghost
   - Rotten
   - Audio
+  - Ricochet
   layers:
   - Default
   - TransparentFX
