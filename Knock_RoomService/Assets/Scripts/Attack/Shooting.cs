@@ -22,8 +22,20 @@ public class Shooting : MonoBehaviour
 
     void Update()
     {
+        AimAtMouse();
         HandleInput();
         UpdateUI();
+    }
+
+    void AimAtMouse()
+    {
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        Vector2 direction = (mousePosition - firePoint.position).normalized;
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+        firePoint.rotation = Quaternion.Euler(0, 0, angle);
     }
 
     void HandleInput()
@@ -64,7 +76,10 @@ public class Shooting : MonoBehaviour
                 break;
         }
 
-        Instantiate(bulletToSpawn, firePoint.position, firePoint.rotation);
+        if(bulletToSpawn != null)
+        {
+            Instantiate(bulletToSpawn, firePoint.position, firePoint.rotation);
+        }
     }
 
     void UpdateUI()

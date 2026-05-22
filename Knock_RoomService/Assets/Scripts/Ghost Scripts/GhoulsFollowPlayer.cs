@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GhoulsFollowPlayer : MonoBehaviour
 {
-    [SerializeField] private float speed = 1.5f;
+    [SerializeField] public float speed = 1.5f;
 
     private GameObject player;
     private bool isPlayerInZone = false;
