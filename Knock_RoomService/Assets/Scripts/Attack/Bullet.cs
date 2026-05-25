@@ -55,6 +55,28 @@ public class Bullet : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+
+          else if (collision.CompareTag("Vampire"))
+          {
+            VampireHealth vampire = collision.GetComponent<VampireHealth>();
+            if (vampire != null)
+            {
+                // Deals the bullet's regular low damage amount
+                vampire.DamageVampire(damage);
+            }
+            Destroy(gameObject);
+          }
+
+
+          else if (collision.CompareTag("Bat"))
+          {
+            HomingProjectile projectile = collision.GetComponent<HomingProjectile>();
+            if (projectile != null)
+            {
+                projectile.TakeDamage();
+            }
+            Destroy(gameObject);
+          }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

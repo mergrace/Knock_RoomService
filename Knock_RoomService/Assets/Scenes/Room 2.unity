@@ -1121,8 +1121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dba5fa65f9d3e6542b0d3124f26f23e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyManager2
-  keyCount: 1
-  keyText: {fileID: 7059298131935494384}
+  keyCount2: 1
+  keyText2: {fileID: 7059298131935494384}
 --- !u!1 &721256326
 GameObject:
   m_ObjectHideFlags: 0
@@ -22652,7 +22652,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6342961301536905831, guid: 35ef97b512d84e14e8688f7318e18ff5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

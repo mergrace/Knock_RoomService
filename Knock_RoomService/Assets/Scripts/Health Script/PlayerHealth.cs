@@ -35,6 +35,11 @@ public class PlayerHealth : MonoBehaviour
         {
             TakeDamage(10);
         }
+
+        if (other.gameObject.CompareTag("Bat"))
+        {
+            TakeDamage(30);
+        }
     }
 
     void TakeDamage(int damage)

@@ -9,6 +9,8 @@ TagManager:
   - Rotten
   - Audio
   - Ricochet
+  - Vampire
+  - Bat
   layers:
   - Default
   - TransparentFX

@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class KeyManager2 : MonoBehaviour
 {
-    public int keyCount;
-    public Text keyText;
+    public int keyCount2;
+    public Text keyText2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,6 +16,6 @@ public class KeyManager2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        keyText.text = keyCount.ToString("1") + "/3";
+        keyText2.text = keyCount2.ToString("1") + "/3";
     }
 }
