@@ -3,6 +3,8 @@ using UnityEngine;
 public class KeyCollect3 : MonoBehaviour
 {
     public KeyManager cm3;
+    public GameObject escapePanel;
+
     AudioManager audioManager;
 
     private void Awake()
@@ -17,6 +19,12 @@ public class KeyCollect3 : MonoBehaviour
             Destroy(gameObject);
             cm3.keyCount++;
             audioManager.PlaySFX(audioManager.keycollect);
+
+            Destroy(gameObject);
+
+            escapePanel.SetActive(true);
+
+            Time.timeScale = 0f;
         }
     }
 }
