@@ -6,6 +6,9 @@ public class VampireHealth : MonoBehaviour
     public int maxHealth = 100;
     private int currentHealth;
 
+    [Header("UI")]
+    public FloatingHealthBar healthBar;
+
     [Header("Shooting Settings")]
     public GameObject projectilePrefab;
     public Transform shootPoint;
@@ -18,12 +21,23 @@ public class VampireHealth : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(maxHealth);
+            healthBar.SetHealth(currentHealth);
+        }
     }
 
     public void DamageVampire(int damageAmount)
     {
         currentHealth -= damageAmount;
         Debug.Log("Vampire Health: " + currentHealth);
+
+        if (healthBar != null)
+        {
+            healthBar.SetHealth(currentHealth);
+        }
 
         if (currentHealth <= 0)
         {
@@ -73,6 +87,13 @@ public class VampireHealth : MonoBehaviour
     void Die()
     {
         Debug.Log("Vampire Defeated!");
+        AudioManager audioManager = FindFirstObjectByType<AudioManager>();
+
+        if (audioManager != null)
+        {
+            audioManager.PlaySFX(audioManager.vampiredeath);
+        }
+
         Destroy(gameObject); // This automatically stops the coroutine loop
     }
 }
