@@ -10,12 +10,12 @@ public class KeyManager2 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        keyCount2 = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        keyText2.text = keyCount2.ToString("1") + "/3";
+        keyText2.text = keyCount2.ToString(keyCount2 + "/3");
     }
 }
