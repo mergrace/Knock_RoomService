@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelButtons : MonoBehaviour
 {
+    public GameObject levelCompletePanel;
+
     public void NextLevel()
     {
         Time.timeScale = 1f;
@@ -15,5 +17,10 @@ public class LevelButtons : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
+    
+    public void ClosePanel()
+    {
+        levelCompletePanel.SetActive(false);
+        Time.timeScale = 1f;
+    }
 }
