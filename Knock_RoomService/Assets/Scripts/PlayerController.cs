@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,8 +18,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animator.SetBool("Walk", isWalking);
-
         if (Time.timeScale == 0f) return;
 
         Vector3 position = Vector3.zero;
@@ -34,7 +33,9 @@ public class PlayerController : MonoBehaviour
             isWalking = true;
             transform.localScale = new Vector3(-1, transform.localScale.y);
         }
-        transform.position += position; 
+        transform.position += position;
+
+        animator.SetBool("Walk", isWalking);
     }
 
 
