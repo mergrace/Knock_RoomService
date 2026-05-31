@@ -57,7 +57,11 @@ public class PlayerHealth : MonoBehaviour
     {
         audioManager.PlaySFX(audioManager.playerdeath);
 
-        Instantiate(deathEffect, transform.position, Quaternion.identity);
+        if (deathEffect != null)
+        {
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
+        }
+        
         gameoverpanel.SetActive(true);
         Destroy(gameObject);
         Debug.Log("Player died");

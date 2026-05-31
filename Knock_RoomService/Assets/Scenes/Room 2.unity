@@ -10980,7 +10980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyCollect
   cm: {fileID: 0}
-  levelCompletePanel: {fileID: 0}
+  levelCompletePanel: {fileID: 823241141}
 --- !u!114 &7002574827248434259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12147,7 +12147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a34e272acc65044491cd03019c4264f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyCollect2
-  cm2: {fileID: 0}
+  cm2: {fileID: 509690801}
   levelCompletePanel: {fileID: 823241141}
 --- !u!222 &8863179944022303963
 CanvasRenderer:

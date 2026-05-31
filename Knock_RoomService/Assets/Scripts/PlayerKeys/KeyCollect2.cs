@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class KeyCollect2 : MonoBehaviour
 {
-    public KeyManager cm2;
+    public KeyManager2 cm2;
     public GameObject levelCompletePanel;
 
     AudioManager audioManager;
@@ -17,7 +17,7 @@ public class KeyCollect2 : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            cm2.keyCount++;
+            cm2.keyCount2++;
             audioManager.PlaySFX(audioManager.keycollect);
 
             Destroy(gameObject);
