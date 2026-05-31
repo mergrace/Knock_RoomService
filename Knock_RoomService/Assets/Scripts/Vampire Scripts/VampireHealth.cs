@@ -5,6 +5,7 @@ public class VampireHealth : MonoBehaviour
 {
     public int maxHealth = 100;
     private int currentHealth;
+    public GameObject deathEffect;
 
     [Header("UI")]
     public FloatingHealthBar healthBar;
@@ -87,6 +88,9 @@ public class VampireHealth : MonoBehaviour
     void Die()
     {
         Debug.Log("Vampire Defeated!");
+
+        Instantiate(deathEffect, transform.position, Quaternion.identity);
+
         AudioManager audioManager = FindFirstObjectByType<AudioManager>();
 
         if (audioManager != null)

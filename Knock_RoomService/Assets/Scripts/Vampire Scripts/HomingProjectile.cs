@@ -8,7 +8,7 @@ public class HomingProjectile : MonoBehaviour
 
     [Header("Vampire Link")]
     private VampireHealth vampireHealth;
-    public int selfDestructDamageToVampire = 25; // Massive damage!
+    public int selfDestructDamageToVampire = 15; // Massive damage!
 
     void Start()
     {
