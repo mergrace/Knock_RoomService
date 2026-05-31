@@ -770,6 +770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VampireHealth
   maxHealth: 100
+  deathEffect: {fileID: 7444611789729808475, guid: fde5718403d4d0b4bbcfdb945939a908, type: 3}
   healthBar: {fileID: 7204317099290156042}
   projectilePrefab: {fileID: 1626441419997725639, guid: ab7a1afa9e2d57a46867f81d5b7c6682, type: 3}
   shootPoint: {fileID: 716228790}
@@ -3642,7 +3643,7 @@ GameObject:
   - component: {fileID: 1319721227}
   - component: {fileID: 1319721228}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: VampHole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

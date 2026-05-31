@@ -666,7 +666,7 @@ MonoBehaviour:
   enemyType: 1
   audioManager: {fileID: 1412661388}
   maxhealth: 100
-  deathEffect: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
+  deathEffect: {fileID: 2270334732091080359, guid: d0c58747eeb726a43a668e7c1cd5ccee, type: 3}
   healthBar: {fileID: 71676487}
   currentHealth: 0
 --- !u!50 &215327346
@@ -3043,7 +3043,7 @@ MonoBehaviour:
   enemyType: 1
   audioManager: {fileID: 1412661388}
   maxhealth: 100
-  deathEffect: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
+  deathEffect: {fileID: 2270334732091080359, guid: d0c58747eeb726a43a668e7c1cd5ccee, type: 3}
   healthBar: {fileID: 450991695}
   currentHealth: 0
 --- !u!50 &828722459
@@ -4062,7 +4062,7 @@ MonoBehaviour:
   enemyType: 1
   audioManager: {fileID: 1412661388}
   maxhealth: 100
-  deathEffect: {fileID: 9123682384972425337, guid: 2c99f49f2ceb1de4297294a7170e79d6, type: 3}
+  deathEffect: {fileID: 2270334732091080359, guid: d0c58747eeb726a43a668e7c1cd5ccee, type: 3}
   healthBar: {fileID: 427712369}
   currentHealth: 0
 --- !u!50 &1303714270
@@ -4416,7 +4416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -966.46, y: -539.78}
+  m_AnchoredPosition: {x: -966.51, y: -539.57}
   m_SizeDelta: {x: 4.5344, y: 1.4574}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1491902108
@@ -5312,7 +5312,7 @@ Transform:
   m_GameObject: {fileID: 1838106696}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.73, y: -0.42, z: 0}
+  m_LocalPosition: {x: -4.81, y: -0.36, z: 0}
   m_LocalScale: {x: 0.14608125, y: 0.14171611, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
