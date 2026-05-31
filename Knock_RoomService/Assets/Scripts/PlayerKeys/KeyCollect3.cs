@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class KeyCollect3 : MonoBehaviour
 {
-    public KeyManager cm3;
+    public KeyManager3 cm3;
     public GameObject escapePanel;
 
     AudioManager audioManager;
@@ -17,7 +17,7 @@ public class KeyCollect3 : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            cm3.keyCount++;
+            cm3.keyCount3++;
             audioManager.PlaySFX(audioManager.keycollect);
 
             Destroy(gameObject);

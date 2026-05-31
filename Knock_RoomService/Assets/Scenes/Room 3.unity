@@ -702,8 +702,9 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -13.429231, y: 8.615499}
       - {x: -13.129232, y: -4.7035756}
-      - {x: 45.732594, y: -4.736139}
-      - {x: 45.65843, y: 8.473737}
+      - {x: 45.709538, y: -4.7361383}
+      - {x: 54.563694, y: -4.782253}
+      - {x: 54.51258, y: 8.1278715}
   m_UseDelaunayMesh: 1
 --- !u!4 &201223923
 Transform:
@@ -749,8 +750,8 @@ Transform:
   m_GameObject: {fileID: 201769849}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.75, z: 0}
-  m_LocalScale: {x: 0.34964013, y: -5.5456643, z: 1}
+  m_LocalPosition: {x: 0, y: 3.09, z: 0}
+  m_LocalScale: {x: 0.08246593, y: -1.1114982, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 716228790}
@@ -816,10 +817,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.49999997
-  m_Height: 0.86597407
+  m_Radius: 0.66622615
+  m_Height: 6.0769167
   m_Direction: 1
-  m_Center: {x: 0, y: 0.14432013, z: 0}
+  m_Center: {x: 0.089506306, y: 0.15768163, z: 0}
 --- !u!212 &201769854
 SpriteRenderer:
   serializedVersion: 2
@@ -869,7 +870,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: -2904457877120967500, guid: 83a2fed12ea2cea4eaf0674dd377a4e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -959,7 +960,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 199249360466117110, guid: db6764a4d311e3446a28997ce8e4ac1b, type: 3}
   m_Color: {r: 0.6415094, g: 0.5547644, b: 0.5547644, a: 1}
@@ -1530,7 +1531,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0018544197, y: 0.029626608}
+  m_Offset: {x: 0.072619975, y: 0.029626608}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1540,7 +1541,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.0037086, y: 1.0592529}
+  m_Size: {x: 1.1526574, y: 1.0592529}
   m_EdgeRadius: 0
 --- !u!212 &554192917
 SpriteRenderer:
@@ -1589,7 +1590,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 199249360466117110, guid: db6764a4d311e3446a28997ce8e4ac1b, type: 3}
   m_Color: {r: 0.6226415, g: 0.5032039, b: 0.5032039, a: 1}
@@ -1856,7 +1857,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.83137256, g: 0.83137256, b: 0.83137256, a: 1}
@@ -2882,8 +2883,8 @@ Transform:
   m_GameObject: {fileID: 1064146700}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 34.52, y: 1.1, z: 0}
-  m_LocalScale: {x: 1, y: 9.1125345, z: 1}
+  m_LocalPosition: {x: 43.2071, y: 1.1, z: 0}
+  m_LocalScale: {x: 1.4142, y: 9.1125345, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 316439865}
@@ -2935,7 +2936,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.83137256, g: 0.83137256, b: 0.83137256, a: 1}
@@ -4533,9 +4534,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Click A & D to move
+  m_text: 'Collect Final key to escape room
 
-    Click 1, 2 or 3 to switch weapons'
+    Click A & D to move
+
+    Click 1,
+    2 or 3 to switch weapons'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f60545f8be22fd84c8bf9f18526ab722, type: 2}
   m_sharedMaterial: {fileID: -3945676053220241166, guid: f60545f8be22fd84c8bf9f18526ab722, type: 2}
@@ -6306,7 +6310,7 @@ RectTransform:
   m_GameObject: {fileID: 8377270338231590253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6785957, y: 1.9297426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5486083613729678568}
@@ -8281,7 +8285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.8627452, g: 0.07843138, b: 0.2352941, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8289,8 +8293,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 39
+    m_Font: {fileID: 12800000, guid: f87eeda846f9d9f419db486f5545f659, type: 3}
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -8555,8 +8559,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 830.15, y: -464.64}
-  m_SizeDelta: {x: 59.08, y: 66.462}
+  m_AnchoredPosition: {x: 815.66, y: -451.56}
+  m_SizeDelta: {x: 62.09, y: 81.52}
   m_Pivot: {x: 1.2732997, y: 0.4999995}
 --- !u!1 &4899054652757332651
 GameObject:
@@ -8881,7 +8885,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6342961301536905831, guid: 35ef97b512d84e14e8688f7318e18ff5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -11232,7 +11236,7 @@ Transform:
   m_GameObject: {fileID: 4240856042205681844}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.82, y: -3.31, z: 0}
+  m_LocalPosition: {x: 56.19, y: -3.29, z: 0}
   m_LocalScale: {x: 0.28687352, y: 0.3509128, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11250,8 +11254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f522b44e34788b4198c37cd8ff44cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyCollect3
-  cm3: {fileID: 0}
-  escapePanel: {fileID: 0}
+  cm3: {fileID: 509690801}
+  escapePanel: {fileID: 823241141}
 --- !u!222 &8863179944022303963
 CanvasRenderer:
   m_ObjectHideFlags: 0
