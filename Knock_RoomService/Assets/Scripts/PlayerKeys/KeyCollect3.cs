@@ -3,7 +3,7 @@ using UnityEngine;
 public class KeyCollect3 : MonoBehaviour
 {
     public KeyManager3 cm3;
-    public GameObject escapePanel;
+   //public GameObject escapePanel;
 
     AudioManager audioManager;
 
@@ -22,9 +22,9 @@ public class KeyCollect3 : MonoBehaviour
 
             Destroy(gameObject);
 
-            escapePanel.SetActive(true);
+            //escapePanel.SetActive(true);
 
-            Time.timeScale = 0f;
+            //Time.timeScale = 0f;
         }
     }
 }

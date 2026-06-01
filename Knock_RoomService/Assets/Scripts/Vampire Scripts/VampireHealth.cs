@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class VampireHealth : MonoBehaviour
 {
-    public int maxHealth = 100;
+    public int maxHealth = 250;
     private int currentHealth;
     public GameObject deathEffect;
 

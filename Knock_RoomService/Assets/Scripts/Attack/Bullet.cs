@@ -61,6 +61,7 @@ public class Bullet : MonoBehaviour
             VampireHealth vampire = collision.GetComponent<VampireHealth>();
             if (vampire != null)
             {
+                Debug.Log("log"); 
                 // Deals the bullet's regular low damage amount
                 vampire.DamageVampire(damage);
             }
@@ -73,6 +74,7 @@ public class Bullet : MonoBehaviour
             HomingProjectile projectile = collision.GetComponent<HomingProjectile>();
             if (projectile != null)
             {
+                Debug.Log("deal dmg" + collision.gameObject.name);
                 projectile.TakeDamage();
             }
             Destroy(gameObject);

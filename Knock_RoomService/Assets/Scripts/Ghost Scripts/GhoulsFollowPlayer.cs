@@ -9,6 +9,9 @@ public class GhoulsFollowPlayer : MonoBehaviour
     private GameObject player;
     private bool isPlayerInZone = false;
 
+    private float distanceToPlayer;
+    [SerializeField] private float radius;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,6 +21,20 @@ public class GhoulsFollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
+
+        if(distanceToPlayer < radius)
+        {
+           
+            isPlayerInZone =true;
+        }
+        else
+        {
+            isPlayerInZone = false;
+        }
+
+
         if (isPlayerInZone == true)
         {
             FollowPlayer(1.5f);
@@ -31,8 +48,10 @@ public class GhoulsFollowPlayer : MonoBehaviour
     public void FollowPlayer(float speed)
     {
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+
+
     }
-    public void OnTriggerEnter2D(Collider2D other)
+ /*   public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
@@ -45,5 +64,13 @@ public class GhoulsFollowPlayer : MonoBehaviour
         {
             isPlayerInZone = false;
         }
+    }
+*/
+
+
+    public void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position,radius);
     }
 }
