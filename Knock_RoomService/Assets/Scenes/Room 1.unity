@@ -1220,7 +1220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -940.17, y: -541.5}
+  m_AnchoredPosition: {x: -940.51, y: -539.88}
   m_SizeDelta: {x: 2.8862, y: 0.61246}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &500353432
@@ -2099,7 +2099,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -914.82, y: -539.28}
+  m_AnchoredPosition: {x: -915.07, y: -537.55}
   m_SizeDelta: {x: 2.8862, y: 0.61246}
   m_Pivot: {x: 0.6076257, y: 0.49999905}
 --- !u!114 &630556694
@@ -2854,7 +2854,7 @@ Transform:
   m_GameObject: {fileID: 740206124}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.46470022, y: 0.07420015, z: -9.2}
+  m_LocalPosition: {x: 1.7811726, y: 0.080249995, z: -9.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5134,7 +5134,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -922.86, y: -541.57}
+  m_AnchoredPosition: {x: -922.54, y: -540.08}
   m_SizeDelta: {x: 2.8862, y: 0.61246}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1569738034
@@ -6091,7 +6091,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -932.42, y: -539.05}
+  m_AnchoredPosition: {x: -932.51, y: -537.59}
   m_SizeDelta: {x: 2.8862, y: 0.61246}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2026820520
@@ -6793,6 +6793,7 @@ GameObject:
   - component: {fileID: 9134947290578058340}
   - component: {fileID: 8255227734422913281}
   - component: {fileID: 9134947290578058341}
+  - component: {fileID: 9134947290578058342}
   m_Layer: 0
   m_Name: Ghost (1)
   m_TagString: Ghost
@@ -7261,6 +7262,7 @@ GameObject:
   - component: {fileID: 903011775456011595}
   - component: {fileID: 2755869260784472225}
   - component: {fileID: 9052341229628145319}
+  - component: {fileID: 9052341229628145320}
   m_Layer: 0
   m_Name: Ghost (2)
   m_TagString: Ghost
@@ -8838,7 +8840,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -949.86, y: -539.11}
+  m_AnchoredPosition: {x: -950.11, y: -537.49}
   m_SizeDelta: {x: 2.8862, y: 0.61246}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &2979440911286374360
@@ -9020,6 +9022,7 @@ GameObject:
   - component: {fileID: 7453728780172836113}
   - component: {fileID: 4686253183414065288}
   - component: {fileID: 8324403385828678894}
+  - component: {fileID: 8324403385828678895}
   m_Layer: 0
   m_Name: Ghost (5)
   m_TagString: Ghost
@@ -9235,6 +9238,7 @@ GameObject:
   - component: {fileID: 4533046380540372339}
   - component: {fileID: 6252080367859068160}
   - component: {fileID: 8664584487673726243}
+  - component: {fileID: 8664584487673726244}
   m_Layer: 0
   m_Name: Ghost (3)
   m_TagString: Ghost
@@ -12515,6 +12519,28 @@ MonoBehaviour:
   deathEffect: {fileID: 7029909310350724463, guid: 96910a549d9910641a13c0303ecb4d0e, type: 3}
   healthBar: {fileID: 630556694}
   currentHealth: 0
+--- !u!95 &8324403385828678895
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3169370321059621224}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f7a6625d3766b194a84ec14a51de4db6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8328316639611984919
 GameObject:
   m_ObjectHideFlags: 0
@@ -12565,6 +12591,7 @@ GameObject:
   - component: {fileID: 3612533833070199254}
   - component: {fileID: 2090024706789162228}
   - component: {fileID: 8550374645196423126}
+  - component: {fileID: 8550374645196423127}
   m_Layer: 0
   m_Name: Ghost (4)
   m_TagString: Ghost
@@ -12729,6 +12756,28 @@ MonoBehaviour:
   deathEffect: {fileID: 7029909310350724463, guid: 96910a549d9910641a13c0303ecb4d0e, type: 3}
   healthBar: {fileID: 1569738034}
   currentHealth: 0
+--- !u!95 &8550374645196423127
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8358348196122101604}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f7a6625d3766b194a84ec14a51de4db6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &8551947637070641069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12782,6 +12831,28 @@ MonoBehaviour:
   deathEffect: {fileID: 7029909310350724463, guid: 96910a549d9910641a13c0303ecb4d0e, type: 3}
   healthBar: {fileID: 2026820520}
   currentHealth: 0
+--- !u!95 &8664584487673726244
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3311015070862720209}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f7a6625d3766b194a84ec14a51de4db6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &8683362644298436933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12859,7 +12930,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.559375, y: 0.5}
-  m_AnchoredPosition: {x: 240.59, y: -18.3}
+  m_AnchoredPosition: {x: 240.59003, y: -18.3}
   m_SizeDelta: {x: 35.79, y: 152.82}
   m_Pivot: {x: 0.50000006, y: 0.31676328}
 --- !u!224 &8757975572722498024
@@ -13011,6 +13082,28 @@ MonoBehaviour:
   deathEffect: {fileID: 7029909310350724463, guid: 96910a549d9910641a13c0303ecb4d0e, type: 3}
   healthBar: {fileID: 500353432}
   currentHealth: 0
+--- !u!95 &9052341229628145320
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725195887637967256}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f7a6625d3766b194a84ec14a51de4db6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!222 &9060621188147009001
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13051,6 +13144,28 @@ MonoBehaviour:
   deathEffect: {fileID: 7029909310350724463, guid: 96910a549d9910641a13c0303ecb4d0e, type: 3}
   healthBar: {fileID: 4750478259392076222}
   currentHealth: 0
+--- !u!95 &9134947290578058342
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155684744909988980}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f7a6625d3766b194a84ec14a51de4db6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9141026662869232707
 GameObject:
   m_ObjectHideFlags: 0

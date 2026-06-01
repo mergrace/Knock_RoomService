@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
         if (Time.timeScale == 0f) return;
 
         Vector3 position = Vector3.zero;
+        isWalking = false;
+
         if(Input.GetKey(KeyCode.D))
         {
             position.x += 0.1f;

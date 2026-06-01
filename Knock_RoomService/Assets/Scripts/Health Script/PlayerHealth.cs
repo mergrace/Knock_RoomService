@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class PlayerHealth : MonoBehaviour
 
     public int maxHealth = 100;
     public int currentHealth;
+    private Animator animator;
+    bool isDead = false; 
 
     public HealthBar healthBar;
     public GameObject gameoverpanel;
@@ -21,6 +24,8 @@ public class PlayerHealth : MonoBehaviour
         gameoverpanel.SetActive(false);
 
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -44,6 +49,7 @@ public class PlayerHealth : MonoBehaviour
 
     void TakeDamage(int damage)
     {
+        if (isDead) return;
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
    
@@ -56,6 +62,8 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         audioManager.PlaySFX(audioManager.playerdeath);
+        isDead = true;
+        animator.SetTrigger("Die");
 
         if (deathEffect != null)
         {
