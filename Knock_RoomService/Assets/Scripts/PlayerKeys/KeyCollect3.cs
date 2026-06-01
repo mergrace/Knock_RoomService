@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KeyCollect3 : MonoBehaviour
 {
@@ -16,9 +17,10 @@ public class KeyCollect3 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
             cm3.keyCount3++;
             audioManager.PlaySFX(audioManager.keycollect);
+
+            SceneManager.LoadScene("Hallway");
 
             Destroy(gameObject);
 
