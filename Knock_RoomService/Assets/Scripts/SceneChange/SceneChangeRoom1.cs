@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class SceenChangeRoom1 : MonoBehaviour
 {
-   public void GoToHallway()
-   {
-      SceneManager.LoadScene("Hallway");
-   }
+
+    public void GoToHallway()
+    {
+        SceneManager.LoadScene("Hallway");
+    }
+
 
 }

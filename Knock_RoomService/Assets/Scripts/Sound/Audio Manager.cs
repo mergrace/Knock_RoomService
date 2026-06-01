@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip ghouldeath;
     public AudioClip keycollect;
     public AudioClip playerdeath;
+    public AudioClip knock;
 
 
 
@@ -22,8 +23,13 @@ public class AudioManager : MonoBehaviour
         SFXSource.PlayOneShot(clip);
     }
 
-   
-   
+    public void PlayKnock()
+    {
+        SFXSource.PlayOneShot(knock);
+    }
+
+
+
 
 
 }
